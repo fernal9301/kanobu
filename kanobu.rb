@@ -10,7 +10,7 @@ user_choice = gets.chomp
 puts "Вы выбрали: " + answers[user_choice.to_i]
 puts "Компьютер выбрал: " + answers[pc_choice.to_i]
 
-if (user_choice == pc_choice)
+if user_choice == pc_choice
   puts "Победила дружба"
   exit
 elsif %w(01 12 20).include?(user_choice + pc_choice)
